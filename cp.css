@@ -1,0 +1,142 @@
+/* styles.css - Alphabetical Order - @media queires at the end */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7e7ce;
+    color: #333;
+}
+
+/* CSS test - consideres part of the body - that is why they are not in alphabetical order */
+h1 {
+ text-align: center;
+}
+h2 {
+text-align: center;
+}
+h3 {
+text-align: center;
+}
+p {
+    text-align: left;
+}
+
+/* CSS for 2 grid boards */
+.board-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.board {
+    width: 30%;
+    margin: 10px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 10px;
+    background-color: #111344;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #111344;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* CSS for header */
+header {
+    background-color: #111344;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+/* Hero image css */
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Adjust the margin-bottom as needed for your desired spacing */
+.last-section {
+    margin-bottom: 20px; 
+    text-align: center;
+}
+
+/* CSS for LoGo control */
+.logo {
+    display: block;
+    max-width: 80px; /* Adjust the maximum width as needed */
+    margin: 20px auto; /* Adjust the margin for positioning */
+    border: 2px solid #52154E;
+    padding: 5px;
+    border-radius: 50px 50px;
+}
+
+/* Default styles for navigation menu */
+.navbar {
+    background-color: #52154E;
+    padding: 10px 0;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+/* CSS for items in section */
+section {
+    padding: 20px;
+}
+
+/* CSS media Queries for Smartphone */
+@media screen and (max-width: 480px) {
+    .board {
+        width: 100%;
+    }
+}
+
+/* Media query for tablets and phones */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none; 
+    }
+
+    .nav-links.show {
+        display: block; 
+    }
+
+    .nav-links li {
+        display: block; 
+    }
+}

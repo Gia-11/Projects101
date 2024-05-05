@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Porfolio</title>
+    <meta name="description" content="Digital Bulletin Boards">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="author" content="SPate"> 
+    <link rel="stylesheet" href="cp.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img src="images/2thepoint.png" alt="Logo" class="logo" ALT="logo" ALIGN=left>
+            </a>
+    <nav class="navbar">
+        <button class="toggle-btn">Menu</button>
+        <br>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <header>
+        <h1>Web Portfolio</h1>
+    </header>
+
+    <!-- Hero image -->
+    <img class="hero-image" src="" alt="Hero Image">
+    <!-- Source:  -->
+
+    <section>
+        <h2>Lorem ipsum dolor sit amet</h2>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+            laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+    </section>
+
+    <section>
+        <div class="board-container">
+            <div class="board">
+                <h2>Not Sure</h2>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+            </div>
+
+            <div class="board">
+                <h2>Not Sure</h2>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h3>Not sure Yet</h3>
+    </section>
+    
+    <main>
+    </main>
+    
+    <footer>
+        <small>Copyright @ WéB1 2024 _ Web Porfolio _ All rights reserved.</small>
+    </footer>
+
+    <script>
+        // Script for Nav menu
+        // Get the toggle button and navigation links
+        const toggleBtn = document.querySelector('.toggle-btn');
+        const navLinks = document.querySelector('.nav-links');
+
+        // Add event listener to toggle button
+        toggleBtn.addEventListener('click', function() {
+            // Toggle the 'show' class on navigation links
+            navLinks.classList.toggle('show');
+        });
+    </script>
+    
+</body>
+</html>
