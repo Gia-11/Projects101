@@ -34,7 +34,7 @@
         img {
             width: 50px;
         }
-        /* CSS animations */
+        /* CSS animations 1 */
         #a1 { animation: move1 5s 3;}
         @keyframes move1 {
             0% { transform: translateX(0px);}
@@ -55,7 +55,7 @@
             75% {transform: translate(-500px) rotate(-360deg);}
             100% {transform: translate(Opx) rotate(0deg);}
         }
-        /* CSS transitions */
+        /* CSS transitions 1 */
         #t1 { transition: transform 1s;}
         #t1:hover {
             cursor: pointer;
@@ -73,6 +73,30 @@
             cursor: pointer;
             transform: rotateY(145deg) scale(1.1);
         }
+
+        /* CSS for the Ball */
+#ball {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #FF10F0;
+    display: inline-block; 
+    /* ADD THESE LINES BELOW */
+    animation: bounce .5s;
+    animation-direction: alternate;      
+    animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
+    animation-iteration-count: infinite;          
+}
+
+/* Keyframes for bouncing ball - won't bounce without it */
+@keyframes bounce {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        transform: translate3d(0, 275px, 0);  /* the translate3d(0,0,0) transform property, which ensures use of the GPU in the translation. We also only specify the change in the Y-direction only. So, down, then up. */             
+    }
+}
     </style>
 </head>
 
@@ -121,9 +145,6 @@
         </div>
     </section>
 
-    <section>
-        <h3>Not sure Yet</h3>
-    </section>
     <br>
     
     <main>
@@ -169,8 +190,13 @@
     <br>
 
     <section>
-
+        <h3>Not sure Yet</h3>
+        <div class="animations">
+            <div id="ball"></div>
+        </div>
     </section>
+    <br>
+
     
     <footer>
         <small>Copyright @ WéB1 2024 _ Web Porfolio _ All rights reserved.</small>
