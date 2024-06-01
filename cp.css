@@ -124,6 +124,10 @@ section {
     .board {
         width: 100%;
     }
+
+    #canvas {
+        width: 100%;
+    }
 }
 
 /* Media query for tablets and phones */
@@ -138,5 +142,9 @@ section {
 
     .nav-links li {
         display: block; 
+    }
+
+    #canvas {
+        width: 75%;
     }
 }
