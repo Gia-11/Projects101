@@ -115,7 +115,7 @@
  // Create gradient
  var grd = ctx.createLinearGradient(0, 0, 1000, 300);
  grd.addColorStop(0, "#ffffff");
- grd.addColorStop(1, "#a3c2c2");
+ grd.addColorStop(1, "#52154E");
 
  // Fill with gradient
  ctx.fillStyle = grd;
@@ -123,7 +123,7 @@
 
 // Drawing the Image
  var img = new Image(400, 320);
-img.src = "images/horse.png";
+img.src = "";
 img.onload = function() {
     ctx.beginPath();                              
     ctx.drawImage(img, 0, -10);
@@ -136,7 +136,7 @@ img.onload = function() {
  ctx.font = 'italic 48px arial';
  ctx.fillStyle = "rgba(50,50,50, 0.5)";
  ctx.fillText('One Wheel Forever', 203, 152);
- ctx.fillStyle = "#669966";
+ ctx.fillStyle = "#ffffff";
  ctx.fillText('One Wheel Forever', 200, 150);                  
  
  ctx.save();
