@@ -22,7 +22,8 @@ html{
     font-family: Helvetica, sans-serif;
     font-size: 24px;
     line-height: 40px;
-    color: #111;
+    color: #111344;
+    text-align: center;
 }
 h4 {
     text-transform: capitalize;
@@ -30,8 +31,9 @@ h4 {
     font-size: 40px;
     padding: 10px;
     margin: 40px;
-    background-color: rgba(20, 20, 20, .8);
+    background-color: #111344;
     color: #FFF;
+    text-align: center;
 }
 #bigYellowCircle {
     background-image: url("https://www.kirupa.com/images/yellow_circle.svg");
