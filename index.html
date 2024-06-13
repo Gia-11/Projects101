@@ -181,6 +181,29 @@ ctx.lineTo(startX + 65, startY + 15);
 ctx.stroke(); 
     }
 </script>
+
+<script>
+    // JavaScript for Scroll Events
+    // When the user scrolls down 25px from the top of the document, show the button
+window.onscroll = function() {
+    scrollFunction()
+};
+ 
+function scrollFunction() {
+    if (document.body.scrollTop > 25 || document.documentElement.scrollTop > 25) {
+        document.getElementById("myBtn").style.display = "block";                
+    } else {
+        document.getElementById("myBtn").style.display = "none";                
+    }
+}
+ 
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+</script>
 </head>
 
 <body>
@@ -300,6 +323,10 @@ ctx.stroke();
             navLinks.classList.toggle('show');
         });
     </script>
+
+
+<!-- HTML for top scroll button -->
+<div class="myBtn" onclick="topFunction()" id="myBtn" title="Go to top">Top</div>
 
 <footer>
     <small>Copyright @ WéB1 2024 _ Web Porfolio _ All rights reserved.</small>
