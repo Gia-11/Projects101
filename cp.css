@@ -7,6 +7,10 @@ body {
     color: #333;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /* CSS test - consideres part of the body - that is why they are not in alphabetical order */
 h1 {
  text-align: center;
