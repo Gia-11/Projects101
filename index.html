@@ -21,6 +21,29 @@
             border-radius: 10px; 
         }
 
+        /* CSS for spining box */
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #52154E;
+            transform: rotate(0);
+            transform-origin: 50% 50%;
+            animation: transformOriginAnimation 2s infinite alternate;
+        }
+
+           @keyframes transformOriginAnimation {
+            0% {
+           transform: rotate(0);
+        }
+            50% {
+           transform: rotate(180deg);
+        }
+            100% {
+            transform: rotate(0);
+        }
+            }
+
+
         .animations {
             margin: 20px;
             padding: 16px;
@@ -279,6 +302,11 @@ function topFunction() {
     
             </div>
             <div class="separator"></div>
+
+            <div class="box"></div>
+
+
+
             <div class="transitions">
                 <!-- Transitions will go here -->
                 <div>
