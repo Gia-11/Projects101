@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Sprite Animation</title>
+    <style>
+        #spriteContainer {
+          width: 300px;
+          height: 300px;
+          display: block;
+          background-image: url("css_sprites.png");
+          background-position: 0, 0;
+          animation: sprite .3s steps(24) infinite;
+        }
+    
+        @keyframes sprite {
+         100% {
+           background-position: -7224px;
+         }
+      }
+      </style>
+</head>
+
+<body>
+    <div id="spriteContainer"></div>
+
+    <script src="//www.kirupa.com/js/prefixfree.min.js"></script>
+</body>
+
+</html>
