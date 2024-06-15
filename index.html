@@ -102,21 +102,6 @@
         transform: translate3d(0, 275px, 0);  /* the translate3d(0,0,0) transform property, which ensures use of the GPU in the translation. We also only specify the change in the Y-direction only. So, down, then up. */             
     }
 }
-
-/* CSS for Sprite */ 
-#spriteContainer {
-   width: 300px;
-   height: 300px;
-   display: block;
-   background-image: url("./img/dot-svgrepo-com.svg");
-   background-position: center;
-   animation: sprite .99s steps(24) infinite;
- }
- @keyframes sprite {
-  100% {
-    background-position: -524px;
-  }
-  }
     </style>
 
 <script>
@@ -359,12 +344,6 @@ function topFunction() {
 	}
 
 </script>
-
-<div id="spriteContainer">
-    <canvas id="canvas" width="1000px" height="300px"></canvas>
-</div>
-
-<script src="//www.kirupa.com/js/prefixfree.min.js"></script>
 
     <section>
         <h3>Movement Effects</h3>
